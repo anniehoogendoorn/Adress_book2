@@ -1,11 +1,11 @@
-#Adress Book Exercise
-#####Adress Book Exercise for code review using Silex and Twig
+#Address Book Exercise
+#####Address Book Exercise for code review using Silex and Twig
 
 ####By Annie Hoogendoorn
 
 ##Description
 
-Adress Book Exercise using silex.
+Adress Book Exercise using silex and twig.
 
 ##Setup
 
