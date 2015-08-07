@@ -23,7 +23,7 @@
     $app->post("/contacts", function() use ($app) {
         $contact = new Contact($_POST['name']);
         $contact->save();
-        return $app['twig']->render('create_contact.html.twig', array('newtask' => $task));
+        return $app['twig']->render('create_contact.html.twig', array('newcontact' => $contact));
     });
 
     // $app->post("/delete_contacts", function() {
