@@ -33,14 +33,14 @@
             return $this->phone;
         }
 
-        function setAdress($new_adress)
+        function setAddress($new_address)
         {
-            $this->phone = (string) $phone;
+            $this->address = (string) $address;
         }
 
-        function getAdress()
+        function getAddress()
         {
-            return $this->$adress;
+            return $this->address;
         }
 
         function save()
