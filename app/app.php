@@ -26,15 +26,12 @@
         return $app['twig']->render('create_contact.html.twig', array('newcontact' => $contact));
     });
 
-    // $app->post("/delete_contacts", function() {
-    //
-    //     Contact::deleteAll();
-    //
-    //     return "
-    //         <h1>List Cleared!</h1>
-    //         <p><a href='/'>Home</a></p>
-    //     ";
-    // });
+    $app->post("/delete_contacts", function() use ($app) {
+
+        Contact::deleteAll();
+
+        return $app['twig']->render('delete_contacts.html.tiwg')
+    });
 
     return $app;
 

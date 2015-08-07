@@ -6,7 +6,7 @@
 <body>
     <div class='container'>
 
-        <h1>Adress Book</h1>
+        <h1>Address Book</h1>
         {% if contacts is not empty %}
         <p>Here are all your contacts:</p>
             <ul>
@@ -18,11 +18,11 @@
 
         <form action='/contacts' method='post'>
             <div class='form-group'>
-            <label for='name'>Task Description</label>
+            <label for='name'>Enter a Name</label>
             <input id='name' name='name' class='form-control' type='text'>
             </div>
 
-            <button type='submit' class='btn-success'>Add task</button>
+            <button type='submit' class='btn-success'>Add Contact</button>
         </form>
 
         <form action='/delete_tasks' method='post'>
