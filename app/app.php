@@ -30,7 +30,7 @@
 
         Contact::deleteAll();
 
-        return $app['twig']->render('delete_contacts.html.tiwg')
+        return $app['twig']->render('delete_contacts.html.twig');
     });
 
     return $app;
