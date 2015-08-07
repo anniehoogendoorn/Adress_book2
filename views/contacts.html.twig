@@ -1,7 +1,7 @@
 <html>
 <head>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-    <title>Adress Book</title>
+    <title>Address Book</title>
 </head>
 <body>
     <div class='container'>
@@ -11,7 +11,11 @@
         <p>Here are all your contacts:</p>
             <ul>
                 {% for contact in contacts %}
-                <li>{{ contact.getName }}</li>
+                <h5><strong>{{ contact.getName }}</strong></h5>
+                    <ul>
+                        <li>{{ contact.getPhone }}</li>
+                        <li>{{ contact.getAddress }}</li>
+                    </ul>
                 {% endfor %}
             </ul>
         {% endif %}
@@ -22,11 +26,21 @@
             <input id='name' name='name' class='form-control' type='text'>
             </div>
 
+            <div class='form-group'>
+            <label for='phone'>Enter a Phone Number</label>
+            <input id='phone' name='phone' class='form-control' type='text'>
+            </div>
+
+            <div class='form-group'>
+            <label for='address'>Enter an Address</label>
+            <input id='address' name='address' class='form-control' type='text'>
+            </div>
+
             <button type='submit' class='btn-success'>Add Contact</button>
         </form>
 
         <form action='/delete_contacts' method='post'>
-            <button type='submit' class='btn-danger'>Clear</button>
+            <button type='submit' class='btn-danger'>Clear Contacts</button>
         </form>
     </div>
 </body>

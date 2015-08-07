@@ -8,8 +8,12 @@
 
         <h1>You created a contact!</h1>
 
-        <li>{{ newcontact.getName }}</li>
-
+        <h5><strong>{{ contact.getName }}</strong></h5>
+            <ul>
+                <li>{{ contact.getPhone }}</li>
+                <li>{{ contact.getAddress }}</li>
+            </ul>
+        <br>
         <p><a href='/'>View your list of contacts.</a></p>
 
     </div>
